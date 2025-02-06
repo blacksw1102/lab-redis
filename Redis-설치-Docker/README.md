@@ -12,7 +12,7 @@ docker images
 ## Redis 실행
 
 ```
-docker run -d -p 6379:6379 --name docker_redis redis
+docker run -d -p 6379:6379 -v C:\workspace\lab-redis\data:/data --name docker_redis redis 
 docker ps
 docker exec -it docker_redis /bin/bash
 redis-cli
